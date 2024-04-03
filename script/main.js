@@ -1,13 +1,13 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Tekan Yes Aja :D',
+        title: 'Mau Sambil Putar Lagu?',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes',
-        cancelButtonText: 'No',
+        confirmButtonText: 'Ya',
+        cancelButtonText: 'Tidak',
     }).then((result) => {
         if (result.isConfirmed) {
             document.querySelector('.song').play();
